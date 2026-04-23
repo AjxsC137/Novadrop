@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Mobiles — Premium Phones, Unreal Prices</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800&family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursorFollower"></div>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Urban<span>Mobiles</span></a>
+      <ul class="nav-links">
+        <li><a href="#hero"        class="nav-link" data-section="hero">Home</a></li>
+        <li><a href="#about"       class="nav-link" data-section="about">About</a></li>
+        <li><a href="#phones"      class="nav-link" data-section="phones">Phones</a></li>
+        <li><a href="#accessories" class="nav-link" data-section="accessories">Accessories</a></li>
+        <li><a href="#contact"     class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Shop Now</a>
+      <!-- Desktop theme toggle — hidden on mobile -->
+      <button class="theme-toggle theme-toggle-desktop" id="themeToggleDesktop" aria-label="Toggle theme" title="Toggle light/dark">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══ MOBILE MENU OVERLAY ══ -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <div class="mobile-logo">
+      <span class="mobile-logo-text">Urban<span>Mobiles</span></span>
+    </div>
+    <button class="mobile-close" id="mobileClose" aria-label="Close menu"></button>
+    <nav class="mobile-nav">
+      <a href="#hero"        class="mobile-link">Home</a>
+      <a href="#about"       class="mobile-link">About</a>
+      <a href="#phones"      class="mobile-link">Phones</a>
+      <a href="#accessories" class="mobile-link">Accessories</a>
+      <a href="#contact"     class="mobile-link">Contact</a>
+    </nav>
+    <div class="mobile-footer">
+      <button class="theme-toggle-mobile" id="themeToggleMobile" aria-label="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <span class="theme-toggle-label">Switch to <span class="theme-mode-label">Light</span> Mode</span>
+      </button>
+      <a href="#contact" class="btn-primary mobile-cta">Shop Now</a>
+      <p class="mobile-tagline">15–20% below market · Always genuine</p>
+    </div>
+  </div>
+
+  <!-- ══ HERO ══ -->
+  <section id="hero">
+    <div class="hero-slash"></div>
+    <div class="hero-slash-2"></div>
+
+    <div class="hero-left">
+      <div class="hero-ticker">
+        <div class="hero-ticker-dot"></div>
+        <span class="hero-ticker-text">Now Available — iPhone 17 Series &amp; Galaxy S25</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line-1">Premium</span>
+        <span class="line-2">Phones.</span>
+        <span class="line-3">Unreal Prices.</span>
+      </h1>
+
+      <!-- Mobile-only phone card — shown between title and sub on small screens -->
+      <div class="hero-phone-mobile">
+        <div class="hero-phone-badge">HOT DEAL</div>
+        <div class="hero-phone-img-wrap">
+          <img src="images/hero-phone.png" alt="iPhone 17 Pro" onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-name">iPhone 17 Pro</span>
+          </div>
+        </div>
+        <div class="hero-phone-info">
+          <div class="hero-phone-name">iPhone 17 Pro</div>
+          <div class="hero-phone-prices">
+            <span class="original">₹1,39,900</span>
+            <span class="discounted">₹1,15,900</span>
+          </div>
+        </div>
+        <div class="hero-phone-mobile-tags">
+          <div class="hero-float-tag"><strong>Save ₹24,000</strong>vs Official Price</div>
+          <div class="hero-float-tag"><strong>Owner Delivered</strong>No Courier Risk</div>
+          <div class="hero-float-tag"><strong>100% Genuine</strong>Verified Auth</div>
+          <div class="hero-float-tag"><strong>Same Day</strong>Delhi NCR</div>
+        </div>
+      </div>
+
+      <p class="hero-sub">The latest iPhones &amp; Samsung flagships — always 15–20% cheaper than anywhere else. No middlemen. No markups. Just legit deals, delivered personally.</p>
+
+      <div class="hero-btns">
+        <a href="#phones" class="btn-primary">Browse Phones</a>
+        <a href="#contact" class="btn-ghost">Contact Us</a>
+      </div>
+
+      <div class="hero-trust">
+        <div class="trust-item">
+          <span class="trust-num">500<em>+</em></span>
+          <span class="trust-label">Phones Sold</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">20<em>%</em></span>
+          <span class="trust-label">Below Market</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-num">4.9<em>★</em></span>
+          <span class="trust-label">Customer Rating</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-phone-card">
+        <div class="hero-phone-badge">HOT DEAL</div>
+        <div class="hero-phone-img-wrap">
+          <img src="images/hero-phone.png" alt="iPhone 17 Pro" onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-name">iPhone 17 Pro</span>
+          </div>
+        </div>
+        <div class="hero-phone-name">iPhone 17 Pro</div>
+        <div class="hero-phone-prices">
+          <span class="original">₹1,39,900</span>
+          <span class="discounted">₹1,15,900</span>
+        </div>
+        <div class="hero-float-tag float-1"><strong>Save ₹24,000</strong>vs Official Price</div>
+        <div class="hero-float-tag float-2"><strong>Owner Delivered</strong>No Courier Risk</div>
+        <div class="hero-float-tag float-3"><strong>100% Genuine</strong>Verified Auth</div>
+        <div class="hero-float-tag float-4"><strong>Same Day</strong>Delhi NCR</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item"><span class="marquee-dot"></span>iPhone 17 Pro Max</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Samsung Galaxy S25 Ultra</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Galaxy Z Fold 6</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>iPhone 16 Pro</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>15–20% Below Market</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>100% Genuine</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Personal Delivery</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Best Price Guarantee</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>iPhone 17 Pro Max</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Samsung Galaxy S25 Ultra</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Galaxy Z Fold 6</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>iPhone 16 Pro</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>15–20% Below Market</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>100% Genuine</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Personal Delivery</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Best Price Guarantee</div>
+    </div>
+  </div>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about" class="has-grid-bg">
+    <div class="grid-layer"></div>
+    <div class="grid-glow"></div>
+    <div class="section-header">
+      <p class="section-eyebrow">Why Urban Mobiles?</p>
+      <h2>The smarter way<br><span class="gradient-text">to buy tech</span></h2>
+    </div>
+
+    <div class="usp-cards-grid">
+
+      <div class="usp-card-item">
+        <div class="usp-card-top">
+          <span class="usp-card-num">01</span>
+          <div class="usp-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="usp-card-watermark">01</div>
+        <h3 class="usp-card-title">Always<br>15–20% Off</h3>
+        <div class="usp-card-reveal">
+          <p>Every product is priced 15–20% below official rate — guaranteed. We cut every middleman so savings go straight to you.</p>
+          <div class="usp-card-stats">
+            <div class="usp-mini-stat"><span>₹20K+</span>avg savings</div>
+            <div class="usp-mini-stat"><span>0</span>hidden fees</div>
+          </div>
+        </div>
+        <div class="usp-card-bar"></div>
+      </div>
+
+      <div class="usp-card-item">
+        <div class="usp-card-top">
+          <span class="usp-card-num">02</span>
+          <div class="usp-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="usp-card-watermark">02</div>
+        <h3 class="usp-card-title">Owner<br>Delivers</h3>
+        <div class="usp-card-reveal">
+          <p>Your order is delivered by the store owner personally. Verify the product face-to-face before paying — zero courier risk.</p>
+          <div class="usp-card-stats">
+            <div class="usp-mini-stat"><span>Same Day</span>Delhi NCR</div>
+            <div class="usp-mini-stat"><span>0</span>courier risk</div>
+          </div>
+        </div>
+        <div class="usp-card-bar"></div>
+      </div>
+
+      <div class="usp-card-item">
+        <div class="usp-card-top">
+          <span class="usp-card-num">03</span>
+          <div class="usp-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="usp-card-watermark">03</div>
+        <h3 class="usp-card-title">WhatsApp<br>&amp; Instagram</h3>
+        <div class="usp-card-reveal">
+          <p>No checkouts, no forms. DM us on Instagram or WhatsApp and get a reply in minutes. Personal shopping made effortless.</p>
+          <div class="usp-card-stats">
+            <div class="usp-mini-stat"><span>&lt;5 min</span>response</div>
+            <div class="usp-mini-stat"><span>24 / 7</span>reachable</div>
+          </div>
+        </div>
+        <div class="usp-card-bar"></div>
+      </div>
+
+      <div class="usp-card-item">
+        <div class="usp-card-top">
+          <span class="usp-card-num">04</span>
+          <div class="usp-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="usp-card-watermark">04</div>
+        <h3 class="usp-card-title">100%<br>Genuine</h3>
+        <div class="usp-card-reveal">
+          <p>Every device is authenticated — original packaging, valid IMEI, full warranty. We stake our reputation on every single sale.</p>
+          <div class="usp-card-stats">
+            <div class="usp-mini-stat"><span>500+</span>verified sales</div>
+            <div class="usp-mini-stat"><span>4.9★</span>avg rating</div>
+          </div>
+        </div>
+        <div class="usp-card-bar"></div>
+      </div>
+
+    </div>
+  </section>
+
+<section id="phones" class="has-grid-bg grid-dots">
+    <div class="grid-layer dots"></div>
+    <div class="grid-glow"></div>
+    <div class="section-header section-header--row">
+      <div>
+        <p class="section-eyebrow">Our Collection</p>
+        <h2>Latest <span class="gradient-text">Smartphones</span></h2>
+      </div>
+      <button class="btn-view-all glass-btn" onclick="openModal('phonesModal')">
+        <span>View All Phones</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </button>
+    </div>
+    <div class="carousel-wrapper" id="phonesCarousel3D"><div class="carousel-grid-dim"></div>
+      <div class="carousel-side-fade-l"></div>
+      <div class="carousel-side-fade-r"></div>
+      <button class="carousel-btn prev" id="phonesPrev" aria-label="Previous">&#8249;</button>
+      <div class="carousel-track-wrap" id="phonesTrack"><div class="carousel-fade-top"></div>
+        <div class="carousel-track" id="phonesRing">
+
+          <!-- ── PHONE CARD 1 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/iphone-17-pro.png" alt="iPhone 17 Pro" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 17 Pro</span>
+          </div>
+              <div class="product-badge">-18%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Apple</p>
+              <h4>iPhone 17 Pro</h4>
+              <div class="product-prices">
+                <span class="original">₹1,39,900</span>
+                <span class="discounted">₹1,15,900</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 2 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/iphone-17-pro-max.png" alt="iPhone 17 Pro Max" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 17 Pro Max</span>
+          </div>
+              <div class="product-badge">-20%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Apple</p>
+              <h4>iPhone 17 Pro Max</h4>
+              <div class="product-prices">
+                <span class="original">₹1,59,900</span>
+                <span class="discounted">₹1,27,900</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 3 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/iphone-17.png" alt="iPhone 17" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 17</span>
+          </div>
+              <div class="product-badge">-15%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Apple</p>
+              <h4>iPhone 17</h4>
+              <div class="product-prices">
+                <span class="original">₹89,900</span>
+                <span class="discounted">₹76,400</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 4 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/iphone-16-pro.png" alt="iPhone 16 Pro" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 16 Pro</span>
+          </div>
+              <div class="product-badge">-17%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Apple</p>
+              <h4>iPhone 16 Pro</h4>
+              <div class="product-prices">
+                <span class="original">₹1,19,900</span>
+                <span class="discounted">₹99,500</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 5 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/iphone-15-pro-max.png" alt="iPhone 15 Pro Max" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 15 Pro Max</span>
+          </div>
+              <div class="product-badge">-20%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Apple</p>
+              <h4>iPhone 15 Pro Max</h4>
+              <div class="product-prices">
+                <span class="original">₹1,59,900</span>
+                <span class="discounted">₹1,27,900</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 6 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/iphone-15.png" alt="iPhone 15" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 15</span>
+          </div>
+              <div class="product-badge">-16%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Apple</p>
+              <h4>iPhone 15</h4>
+              <div class="product-prices">
+                <span class="original">₹79,900</span>
+                <span class="discounted">₹67,100</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 7 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/samsung-z-fold-6.png" alt="Samsung Galaxy Z Fold 6" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy Z Fold 6</span>
+          </div>
+              <div class="product-badge">-19%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Samsung</p>
+              <h4>Galaxy Z Fold 6</h4>
+              <div class="product-prices">
+                <span class="original">₹1,64,999</span>
+                <span class="discounted">₹1,33,600</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 8 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/samsung-z-flip-6.png" alt="Samsung Galaxy Z Flip 6" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy Z Flip 6</span>
+          </div>
+              <div class="product-badge">-18%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Samsung</p>
+              <h4>Galaxy Z Flip 6</h4>
+              <div class="product-prices">
+                <span class="original">₹1,09,999</span>
+                <span class="discounted">₹90,200</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 9 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/samsung-s25-ultra.png" alt="Samsung Galaxy S25 Ultra" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy S25 Ultra</span>
+          </div>
+              <div class="product-badge">-17%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Samsung</p>
+              <h4>Galaxy S25 Ultra</h4>
+              <div class="product-prices">
+                <span class="original">₹1,29,999</span>
+                <span class="discounted">₹1,07,900</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+          <!-- ── PHONE CARD 10 ── -->
+          <div class="product-card glass-card">
+            <div class="product-img-wrap">
+              <img src="images/samsung-s25-plus.png" alt="Samsung Galaxy S25+" loading="lazy"
+                onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy S25+</span>
+          </div>
+              <div class="product-badge">-15%</div>
+            </div>
+            <div class="product-info">
+              <p class="brand">Samsung</p>
+              <h4>Galaxy S25+</h4>
+              <div class="product-prices">
+                <span class="original">₹99,999</span>
+                <span class="discounted">₹85,000</span>
+              </div>
+              <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+            </div>
+          </div>
+
+        </div><!-- end carousel-track -->
+      </div>
+      <button class="carousel-btn next" id="phonesNext" aria-label="Next">&#8250;</button>
+    </div>
+    <div class="carousel-progress" id="phonesDots3D"></div>
+  </section>
+
+  <!--
+  ╔══════════════════════════════════════════════════════╗
+  ║  ACCESSORIES — how to add images                     ║
+  ╠══════════════════════════════════════════════════════╣
+  ║  Same as phones — drop image into  images/  folder   ║
+  ║  and update the  src="images/FILENAME.png"  below.   ║
+  ║  Recommended size: 260 × 260 px (square).            ║
+  ║                                                      ║
+  ║  TO ADD A 6th CARD:                                  ║
+  ║  Copy one full "product-card" block and paste it     ║
+  ║  inside the accessories-grid div. Update the         ║
+  ║  image, name, prices and badge number.               ║
+  ╚══════════════════════════════════════════════════════╝
+  -->
+  <section id="accessories" class="has-grid-bg grid-dots">
+    <div class="grid-layer dots"></div>
+    <div class="grid-glow"></div>
+    <div class="section-header section-header--row">
+      <div>
+        <p class="section-eyebrow">Complete the Setup</p>
+        <h2>Must-Have <span class="gradient-text">Accessories</span></h2>
+      </div>
+      <button class="btn-view-all glass-btn" onclick="openModal('accessoriesModal')">
+        <span>View All Accessories</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </button>
+    </div>
+    <div class="carousel-wrapper" id="accessoriesCarousel3D"><div class="carousel-grid-dim"></div>
+      <div class="carousel-side-fade-l"></div>
+      <div class="carousel-side-fade-r"></div>
+      <button class="carousel-btn prev" id="accPrev" aria-label="Previous">&#8249;</button>
+      <div class="carousel-track-wrap" id="accessoriesTrack"><div class="carousel-fade-top"></div>
+        <div class="carousel-track" id="accessoriesRing">
+
+      <!-- ── ACC CARD 1 ── -->
+      <div class="product-card glass-card">
+        <div class="product-img-wrap">
+          <img src="images/charger-65w.png" alt="65W GaN Charger" loading="lazy"
+            onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">⚡</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">65W GaN Charger</span>
+          </div>
+          <div class="product-badge">-15%</div>
+        </div>
+        <div class="product-info">
+          <p class="brand">Accessory</p>
+          <h4>65W GaN Fast Charger</h4>
+          <div class="product-prices">
+            <span class="original">₹2,499</span>
+            <span class="discounted">₹2,124</span>
+          </div>
+          <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+        </div>
+      </div>
+
+      <!-- ── ACC CARD 2 ── -->
+      <div class="product-card glass-card">
+        <div class="product-img-wrap">
+          <img src="images/earbuds-anc.png" alt="ANC Earbuds" loading="lazy"
+            onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🎧</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">ANC Earbuds</span>
+          </div>
+          <div class="product-badge">-20%</div>
+        </div>
+        <div class="product-info">
+          <p class="brand">Accessory</p>
+          <h4>Pro ANC Wireless Earbuds</h4>
+          <div class="product-prices">
+            <span class="original">₹4,999</span>
+            <span class="discounted">₹3,999</span>
+          </div>
+          <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+        </div>
+      </div>
+
+      <!-- ── ACC CARD 3 ── -->
+      <div class="product-card glass-card">
+        <div class="product-img-wrap">
+          <img src="images/powerbank-20000.png" alt="20000mAh Powerbank" loading="lazy"
+            onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🔋</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">20000mAh Powerbank</span>
+          </div>
+          <div class="product-badge">-18%</div>
+        </div>
+        <div class="product-info">
+          <p class="brand">Accessory</p>
+          <h4>20000mAh Slim Powerbank</h4>
+          <div class="product-prices">
+            <span class="original">₹3,499</span>
+            <span class="discounted">₹2,869</span>
+          </div>
+          <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+        </div>
+      </div>
+
+      <!-- ── ACC CARD 4 ── -->
+      <div class="product-card glass-card">
+        <div class="product-img-wrap">
+          <img src="images/magsafe-case.png" alt="MagSafe Case" loading="lazy"
+            onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🛡️</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">MagSafe Case</span>
+          </div>
+          <div class="product-badge">-16%</div>
+        </div>
+        <div class="product-info">
+          <p class="brand">Accessory</p>
+          <h4>MagSafe Protective Case</h4>
+          <div class="product-prices">
+            <span class="original">₹1,799</span>
+            <span class="discounted">₹1,511</span>
+          </div>
+          <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+        </div>
+      </div>
+
+      <!-- ── ACC CARD 5 ── -->
+      <div class="product-card glass-card">
+        <div class="product-img-wrap">
+          <img src="images/wireless-charger.png" alt="Wireless Charger Pad" loading="lazy"
+            onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🔌</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">Wireless Charger</span>
+          </div>
+          <div class="product-badge">-17%</div>
+        </div>
+        <div class="product-info">
+          <p class="brand">Accessory</p>
+          <h4>15W Wireless Charging Pad</h4>
+          <div class="product-prices">
+            <span class="original">₹1,999</span>
+            <span class="discounted">₹1,659</span>
+          </div>
+          <button class="btn-card" onclick="openEnquiry(this)">Enquire Now</button>
+        </div>
+      </div>
+
+        </div>
+      </div>
+      <button class="carousel-btn next" id="accNext" aria-label="Next">&#8250;</button>
+    </div>
+    <div class="carousel-progress" id="accDots3D"></div>
+  </section>
+
+  <!-- CONTACT ENQUIRY FORM -->
+  <section id="contact" class="has-grid-bg">
+    <div class="grid-layer"></div>
+    <div class="grid-glow"></div>
+    <div class="contact-layout">
+      <div class="contact-left">
+        <p class="section-eyebrow">Ready to Order?</p>
+        <h2 class="contact-heading">Get Your<br><em>Deal Today</em></h2>
+        <p class="contact-sub">Fill in your details and we'll send you a confirmed quote on WhatsApp — usually within 5 minutes.</p>
+        <div class="contact-promises">
+          <div class="promise-item">
+            <span class="promise-dot"></span>
+            <span>No payment until you're happy</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-dot"></span>
+            <span>Owner-verified, personally delivered</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-dot"></span>
+            <span>Response within 5 minutes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <div class="form-header">
+          <span class="form-step-label">Order Enquiry</span>
+          <div class="wa-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Sends via WhatsApp
+          </div>
+        </div>
+
+        <div class="enquiry-form" id="enquiryForm">
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" id="fName" placeholder="e.g. Arjun Sharma" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" id="fPhone" placeholder="+91 98765 43210" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Category *</label>
+            <div class="form-radio-group">
+              <label class="radio-option">
+                <input type="radio" name="category" value="phone" checked onchange="toggleCategory(this)" />
+                <span>📱 Smartphone</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="category" value="accessory" onchange="toggleCategory(this)" />
+                <span>🎧 Accessory</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group" id="phoneSelectGroup">
+            <label>Which Phone? *</label>
+            <div class="select-wrap">
+              <select id="fPhone2">
+                <option value="">— Select a smartphone —</option>
+                <optgroup label="Apple iPhones">
+                  <option>iPhone 17 Pro — ₹1,15,900</option>
+                  <option>iPhone 17 Pro Max — ₹1,27,900</option>
+                  <option>iPhone 17 — ₹76,400</option>
+                  <option>iPhone 16 Pro — ₹99,500</option>
+                  <option>iPhone 15 Pro Max — ₹1,27,900</option>
+                  <option>iPhone 15 — ₹67,100</option>
+                </optgroup>
+                <optgroup label="Samsung Galaxy">
+                  <option>Galaxy Z Fold 6 — ₹1,33,600</option>
+                  <option>Galaxy Z Flip 6 — ₹90,200</option>
+                  <option>Galaxy S25 Ultra — ₹1,07,900</option>
+                  <option>Galaxy S25+ — ₹85,000</option>
+                </optgroup>
+                <option value="other">Other / Not listed</option>
+              </select>
+              <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+
+          <div class="form-group" id="accSelectGroup" style="display:none">
+            <label>Which Accessory? *</label>
+            <div class="select-wrap">
+              <select id="fAcc">
+                <option value="">— Select an accessory —</option>
+                <option>65W GaN Fast Charger — ₹2,124</option>
+                <option>Pro ANC Wireless Earbuds — ₹3,999</option>
+                <option>20000mAh Slim Powerbank — ₹2,869</option>
+                <option>MagSafe Protective Case — ₹1,511</option>
+                <option>15W Wireless Charging Pad — ₹1,659</option>
+                <option value="other">Other / Not listed</option>
+              </select>
+              <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label>Storage / Variant</label>
+              <div class="select-wrap">
+                <select id="fStorage">
+                  <option value="">— Any —</option>
+                  <option>128 GB</option>
+                  <option>256 GB</option>
+                  <option>512 GB</option>
+                  <option>1 TB</option>
+                </select>
+                <svg class="select-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Preferred Colour</label>
+              <input type="text" id="fColour" placeholder="e.g. Black, Titanium" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Delivery Location *</label>
+            <input type="text" id="fLocation" placeholder="e.g. Connaught Place, Delhi" autocomplete="street-address" />
+          </div>
+
+          <div class="form-group">
+            <label>Anything else? <span class="label-opt">(optional)</span></label>
+            <textarea id="fNote" rows="2" placeholder="Budget, trade-in, EMI query, specific timing…"></textarea>
+          </div>
+
+          <button class="btn-wa-submit" onclick="sendWhatsApp()">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Send Enquiry on WhatsApp
+          </button>
+          <p class="form-disclaimer">By submitting you agree to be contacted via WhatsApp only. No spam, ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">Urban<span>Mobiles</span></span>
+        <p>Premium smartphones &amp; accessories at prices you won't find anywhere else. Based in Delhi NCR.</p>
+      </div>
+      <div class="footer-socials">
+        <p class="footer-socials-label">Find Us</p>
+        <div class="footer-social-links">
+          <a href="https://instagram.com/YOURUSERNAME" target="_blank" class="footer-social-link insta">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+          </a>
+          <a href="https://wa.me/919999999999" target="_blank" class="footer-social-link wa">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp
+          </a>
+          <a href="tel:+919999999999" class="footer-social-link call">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call Us
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Urban Mobiles. All rights reserved.</p>
+      <p>Prices indicative — contact us for confirmed quote.</p>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════
+       PHONES MODAL
+  ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="phonesModal" onclick="closeModalOutside(event, 'phonesModal')">
+    <div class="modal-box glass-modal">
+      <div class="modal-header">
+        <div>
+          <p class="section-eyebrow">Full Collection</p>
+          <h2>All <span class="gradient-text">Smartphones</span></h2>
+        </div>
+        <button class="modal-close" onclick="closeModal('phonesModal')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-grid">
+
+        <!--
+        ════════════════════════════════════════
+        ADD MORE PHONE CARDS HERE
+        Copy any product-card block from the
+        carousel above and paste it in this grid.
+        Same image folder (images/) applies.
+        ════════════════════════════════════════
+        -->
+
+        <!-- MODAL PHONE CARD 1 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/iphone-17-pro.png" alt="iPhone 17 Pro" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 17 Pro</span>
+          </div>
+            <div class="product-badge">-18%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Apple</p>
+            <h4>iPhone 17 Pro</h4>
+            <div class="product-prices">
+              <span class="original">₹1,39,900</span>
+              <span class="discounted">₹1,15,900</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 2 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/iphone-17-pro-max.png" alt="iPhone 17 Pro Max" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 17 Pro Max</span>
+          </div>
+            <div class="product-badge">-20%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Apple</p>
+            <h4>iPhone 17 Pro Max</h4>
+            <div class="product-prices">
+              <span class="original">₹1,59,900</span>
+              <span class="discounted">₹1,27,900</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 3 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/iphone-17.png" alt="iPhone 17" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 17</span>
+          </div>
+            <div class="product-badge">-15%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Apple</p>
+            <h4>iPhone 17</h4>
+            <div class="product-prices">
+              <span class="original">₹89,900</span>
+              <span class="discounted">₹76,400</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 4 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/iphone-16-pro.png" alt="iPhone 16 Pro" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 16 Pro</span>
+          </div>
+            <div class="product-badge">-17%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Apple</p>
+            <h4>iPhone 16 Pro</h4>
+            <div class="product-prices">
+              <span class="original">₹1,19,900</span>
+              <span class="discounted">₹99,500</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 5 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/iphone-15-pro-max.png" alt="iPhone 15 Pro Max" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 15 Pro Max</span>
+          </div>
+            <div class="product-badge">-20%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Apple</p>
+            <h4>iPhone 15 Pro Max</h4>
+            <div class="product-prices">
+              <span class="original">₹1,59,900</span>
+              <span class="discounted">₹1,27,900</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 6 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/iphone-15.png" alt="iPhone 15" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Apple</span>
+            <span class="ph-name">iPhone 15</span>
+          </div>
+            <div class="product-badge">-16%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Apple</p>
+            <h4>iPhone 15</h4>
+            <div class="product-prices">
+              <span class="original">₹79,900</span>
+              <span class="discounted">₹67,100</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 7 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/samsung-z-fold-6.png" alt="Samsung Galaxy Z Fold 6" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy Z Fold 6</span>
+          </div>
+            <div class="product-badge">-19%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Samsung</p>
+            <h4>Galaxy Z Fold 6</h4>
+            <div class="product-prices">
+              <span class="original">₹1,64,999</span>
+              <span class="discounted">₹1,33,600</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 8 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/samsung-z-flip-6.png" alt="Samsung Galaxy Z Flip 6" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy Z Flip 6</span>
+          </div>
+            <div class="product-badge">-18%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Samsung</p>
+            <h4>Galaxy Z Flip 6</h4>
+            <div class="product-prices">
+              <span class="original">₹1,09,999</span>
+              <span class="discounted">₹90,200</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 9 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/samsung-s25-ultra.png" alt="Samsung Galaxy S25 Ultra" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy S25 Ultra</span>
+          </div>
+            <div class="product-badge">-17%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Samsung</p>
+            <h4>Galaxy S25 Ultra</h4>
+            <div class="product-prices">
+              <span class="original">₹1,29,999</span>
+              <span class="discounted">₹1,07,900</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL PHONE CARD 10 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/samsung-s25-plus.png" alt="Samsung Galaxy S25+" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">📱</span>
+            <span class="ph-brand">Samsung</span>
+            <span class="ph-name">Galaxy S25+</span>
+          </div>
+            <div class="product-badge">-15%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Samsung</p>
+            <h4>Galaxy S25+</h4>
+            <div class="product-prices">
+              <span class="original">₹99,999</span>
+              <span class="discounted">₹85,000</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('phonesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- ADD MORE PHONE CARDS BELOW THIS LINE — copy the block above -->
+
+      </div><!-- end modal-grid -->
+    </div><!-- end modal-box -->
+  </div><!-- end phonesModal -->
+
+
+  <!-- ═══════════════════════════════════════════
+       ACCESSORIES MODAL
+  ═══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="accessoriesModal" onclick="closeModalOutside(event, 'accessoriesModal')">
+    <div class="modal-box glass-modal">
+      <div class="modal-header">
+        <div>
+          <p class="section-eyebrow">Full Collection</p>
+          <h2>All <span class="gradient-text">Accessories</span></h2>
+        </div>
+        <button class="modal-close" onclick="closeModal('accessoriesModal')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-grid">
+
+        <!--
+        ════════════════════════════════════════
+        ADD MORE ACCESSORY CARDS HERE
+        Copy any product-card block from the
+        accessories section above and paste it.
+        Same image folder (images/) applies.
+        ════════════════════════════════════════
+        -->
+
+        <!-- MODAL ACC CARD 1 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/charger-65w.png" alt="65W GaN Charger" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">⚡</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">65W GaN Charger</span>
+          </div>
+            <div class="product-badge">-15%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Accessory</p>
+            <h4>65W GaN Fast Charger</h4>
+            <div class="product-prices">
+              <span class="original">₹2,499</span>
+              <span class="discounted">₹2,124</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('accessoriesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL ACC CARD 2 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/earbuds-anc.png" alt="ANC Earbuds" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🎧</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">ANC Earbuds</span>
+          </div>
+            <div class="product-badge">-20%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Accessory</p>
+            <h4>Pro ANC Wireless Earbuds</h4>
+            <div class="product-prices">
+              <span class="original">₹4,999</span>
+              <span class="discounted">₹3,999</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('accessoriesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL ACC CARD 3 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/powerbank-20000.png" alt="20000mAh Powerbank" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🔋</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">20000mAh Powerbank</span>
+          </div>
+            <div class="product-badge">-18%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Accessory</p>
+            <h4>20000mAh Slim Powerbank</h4>
+            <div class="product-prices">
+              <span class="original">₹3,499</span>
+              <span class="discounted">₹2,869</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('accessoriesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL ACC CARD 4 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/magsafe-case.png" alt="MagSafe Case" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🛡️</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">MagSafe Case</span>
+          </div>
+            <div class="product-badge">-16%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Accessory</p>
+            <h4>MagSafe Protective Case</h4>
+            <div class="product-prices">
+              <span class="original">₹1,799</span>
+              <span class="discounted">₹1,511</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('accessoriesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- MODAL ACC CARD 5 -->
+        <div class="product-card glass-card">
+          <div class="product-img-wrap">
+            <img src="images/wireless-charger.png" alt="Wireless Charger Pad" loading="lazy"
+              onerror="this.style.opacity='0';" />
+          <div class="img-placeholder">
+            <span class="ph-icon">🔌</span>
+            <span class="ph-brand">Accessory</span>
+            <span class="ph-name">Wireless Charger</span>
+          </div>
+            <div class="product-badge">-17%</div>
+          </div>
+          <div class="product-info">
+            <p class="brand">Accessory</p>
+            <h4>15W Wireless Charging Pad</h4>
+            <div class="product-prices">
+              <span class="original">₹1,999</span>
+              <span class="discounted">₹1,659</span>
+            </div>
+            <a href="#contact" class="btn-card" onclick="closeModal('accessoriesModal')">Enquire Now</a>
+          </div>
+        </div>
+
+        <!-- ADD MORE ACCESSORY CARDS BELOW THIS LINE — copy the block above -->
+
+      </div><!-- end modal-grid -->
+    </div><!-- end modal-box -->
+  </div><!-- end accessoriesModal -->
+
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
