@@ -8,8 +8,12 @@
   const follower = document.getElementById('cursorFollower');
   if (!cursor || !follower) return;
 
-  // Disable on touch devices
-  if (!window.matchMedia('(hover: hover)').matches) return;
+  // Skip entirely on touch / mobile — CSS also hides them but this prevents JS running
+  if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    cursor.style.display   = 'none';
+    follower.style.display = 'none';
+    return;
+  }
 
   let mouseX = -200, mouseY = -200, fX = -200, fY = -200;
 
